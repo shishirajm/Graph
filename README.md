@@ -17,6 +17,7 @@ Run commands:
 ## Test from REPL
 Navigate on the terminal to scala folder: `src/main/scala`
 Open scala REPL, by typing in `scala` on terminal: https://docs.scala-lang.org/overviews/repl/overview.html
+
 Run the following command:
 
 `scala> :load CommonTypes.scala`
