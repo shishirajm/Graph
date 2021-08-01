@@ -28,7 +28,7 @@ Run the following command:
 
 `scala> val g = RandomGraph.generate(5, 5)`
 
-`scala> val g1 = Map(1 -> (2 -> 1, 3 -> 1), 2 -> (3 -> 1), 3 -> (1 -> 1)) // Manual Graph creation`
+`scala> val g1 = Map(1 -> Map(2 -> 1, 3 -> 1), 2 -> Map(3 -> 1), 3 -> Map(1 -> 1)) // Manual Graph creation`
 
 `scala> Dijkstra.shortestPath(g.get, 1, 4)`
 
@@ -37,5 +37,13 @@ Run the following command:
 `scala> Dijkstra.radius(g.get)`
 
 `scala> Dijkstra.diameter(g.get)`
+
+For testing Dfs and Bfs
+
+`scala> :load DfsBfsWeighted.scala`
+
+`scala> DfsBfsWeighted.dfs(1, g.get)`
+
+`scala> DfsBfsWeighted.bfs(1, g.get)
 
 
