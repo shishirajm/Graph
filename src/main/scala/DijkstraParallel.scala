@@ -1,6 +1,12 @@
 import CommonTypes._
 
-object Dijkstra {
+import scala.collection.parallel.CollectionConverters.IterableIsParallelizable
+import scala.collection.parallel.ParIterable
+
+// Couldn't get it working on the REPL
+// Just leaving it in a separate file.
+
+object DijkstraParallel {
   def dijkstraRec(active: Set[Int], res: Map[Int, Int], pred: Map[Int, Int], g: Graph): (Map[Int, Int], Map[Int, Int]) = {
     if (active.isEmpty) (res, pred)
     else {
@@ -44,10 +50,10 @@ object Dijkstra {
     if (distances.keys.toList.length == g.keys.toList.length) distances.values.max else Int.MaxValue
   }
 
-  def eccentricityCalculator(g: Graph): Option[List[Int]] = {
+  def eccentricityCalculator(g: Graph): Option[ParIterable[Int]] = {
     if (g.isEmpty) return None
-    val eccOfVertices = g.keys.toList.map(v => eccentricity(g, v)).filterNot(_ == Int.MaxValue)
-    if (eccOfVertices.length == g.keys.toList.length) Some(eccOfVertices) else None
+    val eccOfVertices = g.keys.toList.par.map(v => eccentricity(g, v)).filterNot(_ == Int.MaxValue)
+    if (eccOfVertices.toList.length == g.keys.toList.length) Some(eccOfVertices) else None
   }
 
   def radius(g: Graph): Int = {
