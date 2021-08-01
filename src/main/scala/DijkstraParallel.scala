@@ -3,11 +3,11 @@ import CommonTypes._
 import scala.collection.parallel.CollectionConverters.IterableIsParallelizable
 import scala.collection.parallel.ParIterable
 
-// Couldn't get it working on the REPL
+// Couldn't get parallel working on the REPL
 // Just leaving it in a separate file.
 
 object DijkstraParallel {
-  def dijkstraRec(active: Set[Int], res: Map[Int, Int], pred: Map[Int, Int], g: Graph): (Map[Int, Int], Map[Int, Int]) = {
+  private def dijkstraRec(active: Set[Int], res: Map[Int, Int], pred: Map[Int, Int], g: Graph): (Map[Int, Int], Map[Int, Int]) = {
     if (active.isEmpty) (res, pred)
     else {
       val vertex = active.minBy(res)
