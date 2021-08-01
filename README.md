@@ -2,7 +2,7 @@
 Graph calculations in scala, Dijkstras algorithm, eccentricity, radius and diameter of a graph.
 
 ## Build and Run
-Navigate to root folder ~/Graph
+ Navigate to root folder ~/Graph
 
 Dependency: 
 * scala 2.13: https://www.scala-lang.org/download/
@@ -15,10 +15,10 @@ Run commands:
 `sbt test`
 
 ## Test from REPL
-Navigate on the terminal to scala folder: `src/main/scala`
-Open scala REPL, by typing in `scala` on terminal: https://docs.scala-lang.org/overviews/repl/overview.html
+ Navigate on the terminal to scala folder: `src/main/scala`
+ Open scala REPL, by typing in `scala` on terminal: https://docs.scala-lang.org/overviews/repl/overview.html
 
-Run the following command:
+ Run the following command:
 
 `scala> :load CommonTypes.scala`
 
@@ -38,7 +38,7 @@ Run the following command:
 
 `scala> Dijkstra.diameter(g.get)`
 
-For testing Dfs and Bfs
+ For testing Dfs and Bfs
 
 `scala> :load DfsBfsWeighted.scala`
 
