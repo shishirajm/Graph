@@ -14,6 +14,10 @@ Run commands:
 
 `sbt test`
 
+IntelliJ:
+
+Open the sbt project in intellij and use the UI way of running tests.
+
 ## Test from REPL
 Navigate on the terminal to scala folder: `src/main/scala`
 
