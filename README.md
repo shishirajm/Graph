@@ -8,13 +8,15 @@ Dependency:
 * scala 2.13: https://www.scala-lang.org/download/
 * sbt: https://www.scala-sbt.org/download.html
 
-Run commands:
+Run via terminal 
+
+Commands:
 
 `sbt compile`
 
 `sbt test`
 
-IntelliJ:
+Run via IntelliJ:
 
 Open the sbt project in intellij and use the UI way of running tests.
 
