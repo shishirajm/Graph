@@ -2,7 +2,7 @@
 Graph calculations in scala, Dijkstras algorithm, eccentricity, radius and diameter of a graph.
 
 ## Build and Run
- Navigate to root folder ~/Graph
+Navigate to root folder ~/Graph
 
 Dependency: 
 * scala 2.13: https://www.scala-lang.org/download/
@@ -15,10 +15,11 @@ Run commands:
 `sbt test`
 
 ## Test from REPL
- Navigate on the terminal to scala folder: `src/main/scala`
- Open scala REPL, by typing in `scala` on terminal: https://docs.scala-lang.org/overviews/repl/overview.html
+Navigate on the terminal to scala folder: `src/main/scala`
 
- Run the following command:
+Open scala REPL, by typing in `scala` on terminal: https://docs.scala-lang.org/overviews/repl/overview.html
+
+Run the following command:
 
 `scala> :load CommonTypes.scala`
 
@@ -38,7 +39,7 @@ Run commands:
 
 `scala> Dijkstra.diameter(g.get)`
 
- For testing Dfs and Bfs
+For testing Dfs and Bfs
 
 `scala> :load DfsBfsWeighted.scala`
 
@@ -46,4 +47,7 @@ Run commands:
 
 `scala> DfsBfsWeighted.bfs(1, g.get)`
 
-
+## Decisions
+* I could have written lot more unit tests, but I have written to check things would work. Some cases might have been missed out.
+* Random weight choosen be between 1 and 10, so that easy to manually calculate.
+* Initially tried writing clojure, but I felt it's not easy for a rookie to write best clojure in one shot. So had to fall back to Scala.
