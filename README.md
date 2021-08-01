@@ -1,5 +1,5 @@
 # Graph
-Graph calculations in scala, Dijkstras algorithm, eccentricity, radius and diameter of a graph.
+Graph calculations in scala. DFS, BFS, Dijkstras algorithm, eccentricity, radius and diameter of a graph.
 
 ## Build and Run
 Navigate to root folder ~/Graph
@@ -55,5 +55,5 @@ For testing Dfs and Bfs
 
 ## Decisions
 * I could have written lot more unit tests, but I have written to check things would work. Some cases might have been missed out.
-* Random weight choosen be between 1 and 10, so that easy to manually calculate.
+* Random weight choosen between 1 and 10, so it's easy to manually calculate.
 * Initially tried writing clojure, but I felt it's not easy for a rookie to write best clojure in one shot. So had to fall back to Scala.
