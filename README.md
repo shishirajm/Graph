@@ -44,6 +44,6 @@ For testing Dfs and Bfs
 
 `scala> DfsBfsWeighted.dfs(1, g.get)`
 
-`scala> DfsBfsWeighted.bfs(1, g.get)
+`scala> DfsBfsWeighted.bfs(1, g.get)`
 
 
